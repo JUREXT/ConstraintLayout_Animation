@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.Placeholder
+        android:id="@+id/placeholder"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewTone"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="click"
+        android:src="@drawable/ic_audiotrack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewAndroid"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewAndroid"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="click"
+        android:src="@drawable/ic_android"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewDot"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewTone" />
+
+    <ImageView
+        android:id="@+id/imageViewDot"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="click"
+        android:src="@drawable/ic_brightness"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPhone"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAndroid" />
+
+    <ImageView
+        android:id="@+id/imageViewPhone"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="click"
+        android:src="@drawable/ic_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCheck"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewDot" />
+
+    <ImageView
+        android:id="@+id/imageViewCheck"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="click"
+        android:src="@drawable/ic_beenhere"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhone" />
+
+</android.support.constraint.ConstraintLayout>
