@@ -13,6 +13,8 @@ public class MainActivity extends Activity {
     private Placeholder mPlaceholder;
     private ConstraintLayout mLayout;
 
+    /// more info here https://www.youtube.com/watch?v=LQ1DKrCYwz4&list=PLrnPJCHvNZuA80lNWNCLICR3qYzhw3iPI&index=5
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
